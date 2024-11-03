@@ -71,7 +71,7 @@ const eliminarProductoDelCarrito = () => {
     }
 
     // Le muestro al usuario los productos en el carrio con la misma logica que mostrarListaProductos pero uso el indice[i] para ver lo productos que se ingresaron en el carrito
-    let listaCarrito = mostrarCarrito()
+    let {listaCarrito} = mostrarCarrito()
     let productoAEliminar = Number(prompt(`¿Qué producto desea eliminar del carrito?\n${listaCarrito}`));
 
     // Verifico que lo seleccionado este en la lista del carrito
@@ -165,6 +165,7 @@ function opcionesDeTienda() {
                 break;
 
             default:
+                alert("Opción no válida. Intente nuevamente.");
                 break;
 
 
